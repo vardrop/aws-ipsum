@@ -1,0 +1,14 @@
+service: aws-ipsum
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  profile: ipsum
+
+functions:
+  ipsum:
+    handler: handler.ipsum
+    events:
+      - http:
+          method: get
+          path: /

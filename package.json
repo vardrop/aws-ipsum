@@ -1,0 +1,22 @@
+{
+  "name": "aws-ipsum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "dependencies": {
+    "lorem-ipsum": "^1.0.6"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "local": "sls invoke local -f ipsum",
+    "test": "mocha",
+    "deploy": "npm test && sls deploy -v"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
